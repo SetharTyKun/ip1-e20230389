@@ -1,7 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import Parent from './components/Parent.vue';
+</script>
 
 <template>
-  <h1 class="text-5xl">Hello World</h1>
+  <Parent />
 </template>
-
-<style scoped></style>
