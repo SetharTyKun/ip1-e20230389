@@ -4,11 +4,12 @@ export const router = createRouter({
   history: createWebHistory(),
   routes: [
     // public
+    { path: '/', name: 'home', component: () => import('@/views/HomeView.vue') },
     { path: '/login', name: 'login', component: () => import('@/views/LoginView.vue') },
     { path: '/register', name: 'register', component: () => import('@/views/RegisterView.vue') },
 
     // catalogue (members and librarians)
-    { path: '/', name: 'catalogue', component: () => import('@/views/CatalogueView.vue') },
+    { path: '/books', name: 'catalogue', component: () => import('@/views/BookView.vue') },
     { path: '/books/:id', name: 'book-detail', component: () => import('@/views/BookDetailView.vue') },
 
     // members

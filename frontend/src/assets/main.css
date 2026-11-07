@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+    --color-header: #3d3730;        /* dark brown */
+    --color-paper: #e2dcc5;         /* page background */
+    --color-card: #faf9f4;          /* small cream cards */
+    --color-ink: #2b2a26;           /* normal text */
+    --color-accent: #1d62c2;        /* buttons and links (blue)*/
+}

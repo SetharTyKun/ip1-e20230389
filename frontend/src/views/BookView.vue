@@ -10,9 +10,13 @@
 </script>
 
 <template>
-    <div class="flex justify-center items-center min-h-screen">
-        <div>
-            <h1 class="text-5xl mb-8">Catalogue View</h1>
+    <!-- background -->
+    <div class="bg-paper">
+
+        <!-- content -->
+        <div class="bg-white mx-auto max-w-5xl p-4 rounded-lg">
+            <h1 class="text-2xl font-bold">Books</h1>
+
             <p v-if="loading">Loading...</p>
             <p v-else-if="error">{{ error }}</p>
             <p v-else-if="books.length === 0">No books found</p>
