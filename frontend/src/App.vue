@@ -1,7 +1,10 @@
 <script setup lang="ts">
-  import Parent from './components/Parent.vue';
+
 </script>
 
 <template>
-  <Parent />
-</template>
+  <!-- <nav>
+    <RouterLink to="/">Catalogue</RouterLink>
+  </nav> -->
+  <RouterView />
+</template> 

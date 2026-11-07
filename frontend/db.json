@@ -1,0 +1,183 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "sethartykun@gmail.com",
+            "password_hash": "12345678",
+            "name": "Sethar TyKun",
+            "role": "LIBRARIAN",
+            "active": true,
+            "created_at": "2026-10-01T00:00:00.000Z"
+        },
+        {
+            "id": 2,
+            "email": "daraleap@gmail.com",
+            "password_hash": "12345678",
+            "name": "Daraleap",
+            "role": "MEMBER",
+            "active": true,
+            "created_at": "2026-10-01T00:00:00.000Z"
+        }
+    ],
+    "categories": [
+        { "id": 1, "name": "Science", "parent_id": null, "active": true },
+        { "id": 2, "name": "Computer Science", "parent_id": 1, "active": true },
+        { "id": 3, "name": "Mathematics", "parent_id": 1, "active": true },
+        { "id": 4, "name": "Literature", "parent_id": null, "active": true },
+        { "id": 5, "name": "Fiction", "parent_id": 4, "active": true }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "title": "Clean Code",
+            "author": "Robert C. Martin",
+            "isbn": "978-0132350884",
+            "description": "A handbook of agile software craftsmanship.",
+            "category_id": 2,
+            "copies_total": 4,
+            "copies_available": 2,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 2,
+            "title": "The Pragmatic Programmer",
+            "author": "Andrew Hunt, David Thomas",
+            "isbn": "978-0135957059",
+            "description": "Practical advice for working programmers.",
+            "category_id": 2,
+            "copies_total": 2,
+            "copies_available": 1,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 3,
+            "title": "Introduction to Algorithms",
+            "author": "Cormen, Leiserson, Rivest, Stein",
+            "isbn": "978-0262046305",
+            "description": "A broad introduction to algorithms and data structures.",
+            "category_id": 2,
+            "copies_total": 3,
+            "copies_available": 0,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 4,
+            "title": "Database System Concepts",
+            "author": "Silberschatz, Korth, Sudarshan",
+            "isbn": "978-0078022159",
+            "description": "A standard textbook on relational databases.",
+            "category_id": 2,
+            "copies_total": 3,
+            "copies_available": 3,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 5,
+            "title": "Design Patterns",
+            "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+            "isbn": "978-0201633610",
+            "description": "Elements of reusable object-oriented software.",
+            "category_id": 2,
+            "copies_total": 2,
+            "copies_available": 2,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 6,
+            "title": "Refactoring",
+            "author": "Martin Fowler",
+            "isbn": "978-0134757599",
+            "description": "Improving the design of existing code.",
+            "category_id": 2,
+            "copies_total": 2,
+            "copies_available": 1,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 7,
+            "title": "Calculus: Early Transcendentals",
+            "author": "James Stewart",
+            "isbn": "978-1285741550",
+            "description": "A university calculus textbook.",
+            "category_id": 3,
+            "copies_total": 5,
+            "copies_available": 4,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 8,
+            "title": "Concrete Mathematics",
+            "author": "Graham, Knuth, Patashnik",
+            "isbn": "978-0201558029",
+            "description": "A foundation for computer science.",
+            "category_id": 3,
+            "copies_total": 1,
+            "copies_available": 1,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 9,
+            "title": "1984",
+            "author": "George Orwell",
+            "isbn": "978-0451524935",
+            "description": "A dystopian novel about surveillance and control.",
+            "category_id": 5,
+            "copies_total": 4,
+            "copies_available": 3,
+            "active": true,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        },
+        {
+            "id": 10,
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "isbn": "978-0547928227",
+            "description": "A fantasy adventure in Middle-earth.",
+            "category_id": 5,
+            "copies_total": 3,
+            "copies_available": 0,
+            "active": false,
+            "cover_url": null,
+            "created_at": "2026-10-01T00:00:00.000Z",
+            "updated_at": null
+        }
+    ],
+    "loans": [
+        {
+            "id": 1,
+            "member_id": 2,
+            "book_id": 1,
+            "loaned_by_id": 1,
+            "borrowed_at": "2026-11-01T00:00:00.000Z",
+            "due_date": "2026-11-15T00:00:00.000Z",
+            "returned_at": null,
+            "returned_by_id": null
+        }
+    ]
+}
